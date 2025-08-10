@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /* ===== Paleta & Tipografía (elegante) ===== */
+:root{
+  --bg:#fdf6ec;           /* crema de fondo */
+  --card:#ffffff;         /* blanco limpio */
+  --ink:#3e342a;          /* texto principal (cálido) */
+  --muted:#7c6f5f;        /* texto secundario */
+  --gold:#d9b78f;         /* dorado suave (acentos) */
+  --gold-2:#b89268;       /* dorado más profundo */
+  --rose:#f3dfc1;         /* brillo suave */
+  --line:#eadfcc;         /* bordes */
+}
+
+html,body{
+  background:radial-gradient(1200px 700px at 20% -10%, #fff 0, var(--bg) 40%, #f7eddc 100%);
+  color:var(--ink);
+  font-family: "Inter", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+}
+
+/* ===== Contenedores & Secciones ===== */
+.container{max-width:1100px;margin:0 auto;padding:0 20px}
+section{padding:72px 0;border-top:1px solid var(--line)}
+h1,h2{letter-spacing:.3px}
+h1{font-size:48px;line-height:1.05;margin:0 0 10px}
+h2{font-size:30px;margin:0 0 14px}
+.muted{color:var(--muted)}
+
+/* ===== Navbar “premium” con sutil vidrio ===== */
+header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(255,255,255,.55);
+  backdrop-filter:saturate(160%) blur(12px);
+  border-bottom:1px solid var(--line);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800}
+.brand-badge{
+  display:inline-grid;place-items:center;width:36px;height:36px;
+  border-radius:12px;
+  background:linear-gradient(135deg,var(--gold),var(--rose));
+  color:#3a2f24;font-weight:900;box-shadow:0 8px 20px rgba(185,146,104,.28);
+}
+
+/* ===== Botones (gradiente dorado) ===== */
+.btn{
+  display:inline-block;border-radius:14px;padding:12px 18px;font-weight:700;
+  background:linear-gradient(90deg,var(--gold),var(--rose));
+  color:#2f261e;border:1px solid rgba(185,146,104,.35);
+  box-shadow:0 10px 26px rgba(185,146,104,.25);
+  transition:transform .15s ease, box-shadow .15s ease, filter .15s ease;
+}
+.btn:hover{transform:translateY(-2px);filter:saturate(110%);box-shadow:0 14px 32px rgba(185,146,104,.32)}
+.btn-outline{
+  border:1px solid var(--gold-2);color:var(--ink);background:transparent;
+  padding:10px 16px;border-radius:12px;font-weight:600
+}
+.btn-outline:hover{background:#fff5e7}
+
+/* ===== Tarjetas (look editorial) ===== */
+.card{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:20px;
+  padding:22px;
+  box-shadow:0 12px 40px rgba(55,35,10,.06);
+  transition:transform .15s ease, box-shadow .15s ease;
+}
+.card:hover{transform:translateY(-3px);box-shadow:0 18px 46px rgba(55,35,10,.10)}
+.card h3{margin:6px 0 8px}
+
+/* ===== Grids ===== */
+.grid{display:grid;gap:18px}
+.grid-3{grid-template-columns:repeat(3,1fr)}
+.grid-2{grid-template-columns:repeat(2,1fr)}
+@media (max-width: 900px){.grid-3,.grid-2{grid-template-columns:1fr} h1{font-size:38px}}
+
+/* ===== Hero ===== */
+.hero{padding:70px 0 50px;display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center}
+.hero img{width:100%;border-radius:16px;border:1px solid var(--line)}
+@media (max-width: 900px){.hero{grid-template-columns:1fr}}
+
+/* ===== Imágenes de producto con borde fino ===== */
+.card img{
+  width:100%;border-radius:14px;border:1px solid var(--line);
+  box-shadow:0 8px 24px rgba(0,0,0,.06)
+}
+
+/* ===== Links ===== */
+a{color:var(--gold-2);text-decoration:none}
+a:hover{opacity:.9}
+
+/* ===== Footer limpio ===== */
+footer{padding:36px 0;border-top:1px solid var(--line);color:#6a5c4a;text-align:center}
+  </style>
+</head>
+<body>
+    <header>
+    <div class="container nav">
+      <div class="brand">
+        <span style="display:inline-grid;place-items:center;width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--brand),var(--accent));color:var(--bg);font-weight:900">L</span>
+        Luka Cosmetics <span class="badge">Belleza consciente</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios/Productos</a></li>
+          <li><a href="#noticias">Noticias</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#faq">Preguntas</a></li>
+          <li><a href="#invierte">Invierte</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <a class="btn-outline" href="#invierte">Invierte con nosotros</a>
+    </div>
+  </header>
+    <section id="servicios">
+      <h2>Servicios y/o productos</h2>
+      <p class="muted">Tres líneas principales con fórmulas limpias y resultados visibles.</p>
+      <div class="grid grid-3">
+        <div class="card">
+          <h3>Línea Facial</h3>
+          <p class="muted">Limpiadores suaves, tónicos equilibrantes, sueros antioxidantes (vitamina C, niacinamida) y cremas antiarrugas con péptidos.</p>
+          <img src="skincare1.png" alt="Skincare hero" style="width:100%;border-radius:12px">
+        </div>
+        <div class="card">
+          <h3>Línea Corporal</h3>
+          <p class="muted">Exfoliantes de azúcar, aceites nutritivos con escualano y mantecas corporales con karité para piel luminosa.</p>
+        </div>
+        <div class="card">
+          <h3>Línea Solar</h3>
+          <p class="muted">Protectores SPF 50 de amplio espectro y <em>after sun</em> calmante con aloe y pantenol.</p>
+        </div>
+      </div>
+    </section>
+</body>
+</html>
