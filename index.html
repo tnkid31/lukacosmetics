@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LUMINA SkinCare — Belleza consciente</title>
+  <meta name="description" content="LUMINA SkinCare: productos de skincare y belleza con ingredientes naturales y ciencia dermatológica." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f172a;        /* slate-900 */
+      --card:#111827cc;    /* gray-900 alpha */
+      --text:#e5e7eb;      /* gray-200 */
+      --muted:#9ca3af;     /* gray-400 */
+      --brand:#a78bfa;     /* violet-300 */
+      --brand2:#34d399;    /* emerald-400 */
+      --accent:#f472b6;    /* pink-400 */
+      --white:#ffffff;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:linear-gradient(180deg,#0b1026,#121a3a 50%,#0b1026);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;scroll-behavior:smooth}
+    a{color:var(--brand);text-decoration:none}
+    a:hover{opacity:.9}
+    .container{max-width:1100px;margin:0 auto;padding:0 20px}
+    header{
+      position:sticky;top:0;z-index:50;
+      backdrop-filter:saturate(180%) blur(10px);
+      background:rgba(5,8,20,.6);border-bottom:1px solid #ffffff12
+    }
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brand{display:flex;gap:12px;align-items:center;font-weight:800;letter-spacing:.4px}
+    .badge{font-size:12px;color:var(--bg);background:linear-gradient(90deg,var(--brand),var(--brand2));padding:4px 8px;border-radius:999px;margin-left:8px}
+    nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0;font-weight:600}
+    nav a{color:var(--white)}
+    .btn{display:inline-block;background:linear-gradient(90deg,var(--brand),var(--accent));color:var(--bg);padding:12px 18px;border-radius:14px;font-weight:700;box-shadow:0 8px 20px #00000055}
+    .btn-outline{border:1px solid #ffffff22;color:var(--white);padding:10px 16px;border-radius:12px}
+    .hero{padding:70px 0 50px;display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center}
+    .hero h1{font-size:48px;line-height:1.05;margin:0}
+    .hero p{color:var(--muted);font-size:18px}
+    .card{background:var(--card);border:1px solid #ffffff14;border-radius:18px;padding:22px;box-shadow:0 12px 40px #00000050}
+    .grid{display:grid;gap:18px}
+    .grid-3{grid-template-columns:repeat(3,1fr)}
+    .grid-2{grid-template-columns:repeat(2,1fr)}
+    section{padding:64px 0;border-top:1px solid #ffffff12}
+    h2{font-size:28px;margin:0 0 14px}
+    h3{margin:8px 0 6px}
+    .kpis{display:flex;gap:24px;flex-wrap:wrap;color:var(--muted);font-size:14px}
+    .tag{display:inline-block;border:1px solid #ffffff22;border-radius:999px;padding:6px 10px;margin:3px}
+    .list{margin:0;padding-left:18px;color:var(--muted)}
+    .footer{padding:36px 0;color:#cbd5e1;text-align:center}
+    .socials a{margin-right:10px;display:inline-flex;align-items:center;gap:8px}
+    iframe{border:0}
+    /* Responsive */
+    @media (max-width: 900px){
+      .hero{grid-template-columns:1fr}
+      .grid-3{grid-template-columns:1fr}
+      .grid-2{grid-template-columns:1fr}
+      nav ul{display:none}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <span style="display:inline-grid;place-items:center;width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--brand),var(--accent));color:var(--bg);font-weight:900">L</span>
+        LUMINA SkinCare <span class="badge">Belleza consciente</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios/Productos</a></li>
+          <li><a href="#noticias">Noticias</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#faq">Preguntas</a></li>
+          <li><a href="#invierte">Invierte</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <a class="btn-outline" href="#invierte">Invierte con nosotros</a>
+    </div>
+  </header>
+
+  <!-- INICIO -->
+  <main id="inicio" class="container">
+    <section class="hero">
+      <div>
+        <h1>La belleza empieza con una piel saludable ✨</h1>
+        <p>En <strong>LUMINA SkinCare</strong> formulamos productos con ingredientes naturales y ciencia dermatológica para hidratar, proteger y realzar tu belleza natural.</p>
+        <div style="display:flex;gap:12px;margin-top:16px">
+          <a class="btn" href="#servicios">Ver líneas de producto</a>
+          <a class="btn-outline" href="#contacto">Contáctanos</a>
+        </div>
+        <div class="kpis" style="margin-top:16px">
+          <span class="tag">Vegano</span>
+          <span class="tag">Cruelty free</span>
+          <span class="tag">Envases reciclables</span>
+          <span class="tag">Probado dermatológicamente</span>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?q=80&w=1200&auto=format&fit=crop" alt="Skincare hero" style="width:100%;border-radius:12px">
+        <p style="margin-top:10px;color:var(--muted)">Imagen ilustrativa — puedes reemplazarla en Google Sites.</p>
+      </div>
+    </section>
+
+    <!-- SERVICIOS / PRODUCTOS -->
+    <section id="servicios">
+      <h2>Servicios y/o productos</h2>
+      <p class="muted">Tres líneas principales con fórmulas limpias y resultados visibles.</p>
+      <div class="grid grid-3">
+        <div class="card">
+          <h3>Línea Facial</h3>
+          <p class="muted">Limpiadores suaves, tónicos equilibrantes, sueros antioxidantes (vitamina C, niacinamida) y cremas antiarrugas con péptidos.</p>
+        </div>
+        <div class="card">
+          <h3>Línea Corporal</h3>
+          <p class="muted">Exfoliantes de azúcar, aceites nutritivos con escualano y mantecas corporales con karité para piel luminosa.</p>
+        </div>
+        <div class="card">
+          <h3>Línea Solar</h3>
+          <p class="muted">Protectores SPF 50 de amplio espectro y <em>after sun</em> calmante con aloe y pantenol.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOTICIAS -->
+    <section id="noticias">
+      <h2>Noticias de la empresa</h2>
+      <div class="grid grid-2">
+        <article class="card">
+          <h3>Lanzamiento: Pure Glow</h3>
+          <p class="muted">Presentamos <strong>Pure Glow</strong>, con fórmulas veganas y envases 100% reciclables. Disponible desde hoy en tienda en línea.</p>
+        </article>
+        <article class="card">
+          <h3>Promoción de lanzamiento</h3>
+          <p class="muted">Por todo el mes: <strong>20% de descuento</strong> en compras superiores a Q300 en la tienda online.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- SOBRE LA EMPRESA -->
+    <section id="sobre">
+      <h2>Sobre LUMINA</h2>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>Misión</h3>
+          <p class="muted">Brindar soluciones de skincare efectivas, seguras y accesibles para una belleza consciente.</p>
+          <h3>Visión</h3>
+          <p class="muted">Ser la marca líder en belleza sustentable en Latinoamérica.</p>
+          <h3>Valores</h3>
+          <ul class="list">
+            <li>Innovación y ciencia dermatológica</li>
+            <li>Transparencia de ingredientes</li>
+            <li>Sustentabilidad y bienestar</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Nuestra historia</h3>
+          <p class="muted">Nacimos con la idea de que el cuidado de la piel debe ser sencillo, honesto y efectivo. Trabajamos con laboratorios certificados y priorizamos materias primas responsables.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PREGUNTAS FRECUENTES -->
+    <section id="faq">
+      <h2>Preguntas frecuentes</h2>
+      <div class="grid grid-3">
+        <div class="card">
+          <h3>¿Son cruelty free?</h3>
+          <p class="muted">Sí. No realizamos pruebas en animales.</p>
+        </div>
+        <div class="card">
+          <h3>¿Envían a todo el país?</h3>
+          <p class="muted">Sí, con mensajería nacional y seguimiento en línea.</p>
+        </div>
+        <div class="card">
+          <h3>¿Puedo comprar en línea?</h3>
+          <p class="muted">Sí, a través de nuestra tienda y redes sociales.</p>
+        </div>
+        <div class="card">
+          <h3>¿Apto para piel sensible?</h3>
+          <p class="muted">Probado dermatológicamente y sin fragancias intensas.</p>
+        </div>
+        <div class="card">
+          <h3>¿Tienen garantía?</h3>
+          <p class="muted">Garantía de satisfacción de 15 días.</p>
+        </div>
+        <div class="card">
+          <h3>¿Cómo puedo invertir?</h3>
+          <p class="muted">Revisa la sección “Invierte con nosotros” y contáctanos.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- INVIERTE / VIDEO 480x360 -->
+    <section id="invierte">
+      <h2>Invierte con nosotros</h2>
+      <div class="grid grid-2">
+        <div class="card">
+          <p class="muted">Únete a LUMINA SkinCare y forma parte de una marca en crecimiento que apuesta por la innovación y la belleza consciente. Oportunidad de inversión con enfoque sustentable y escalable.</p>
+          <ul class="list">
+            <li>Portafolio con alta rotación</li>
+            <li>Propuesta de valor clara y diferenciada</li>
+            <li>Comunidad digital en expansión</li>
+          </ul>
+        </div>
+        <div class="card" style="display:grid;place-items:center">
+          <!-- Reemplaza el src con tu URL de YouTube.
+               Tamaño solicitado: 480x360 -->
+          <iframe width="480" height="360" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                  title="Video de inversión LUMINA" allowfullscreen></iframe>
+          <p class="muted" style="margin-top:8px">Inserta aquí el video del equipo (máximo 1 minuto, 480×360).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO / UBICACIÓN -->
+    <section id="contacto">
+      <h2>Contacto y ubicación</h2>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>Escríbenos</h3>
+          <p class="muted">📧 contacto@lumina-skincare.com<br>📱 +502 5555-5555</p>
+          <p class="muted">También puedes llenar el formulario de contacto:</p>
+          <a class="btn" href="https://forms.gle/" target="_blank" rel="noopener">Abrir formulario</a>
+          <div class="socials" style="margin-top:14px">
+            <a href="#" target="_blank" rel="noopener">Facebook</a>
+            <a href="#" target="_blank" rel="noopener">Instagram</a>
+            <a href="#" target="_blank" rel="noopener">TikTok</a>
+            <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Ubicación</h3>
+          <p class="muted">Zona 10, Ciudad de Guatemala, Guatemala.</p>
+          <!-- Mapa: cambia el src por el de tu ubicación en Google Maps -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.726071511238!2d-90.513!3d14.601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a38c3d4a9f87%3A0x0!2sZona%2010%2C%20Ciudad%20de%20Guatemala!5e0!3m2!1ses!2sgt!4v0000"
+            width="100%" height="320" loading="lazy" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="y"></span> LUMINA SkinCare — Belleza consciente. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
