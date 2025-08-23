@@ -171,3 +171,56 @@ footer{padding:36px 0;border-top:1px solid var(--line);color:#6a5c4a;text-align:
   object-fit: contain;
 }
 
+/* Logo */
+.logo {
+  height: 40px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+/* Botón hamburguesa */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Menú normal (desktop) */
+nav ul {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    background: white;
+    width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  nav ul {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav.show {
+    display: block;
+  }
+}
